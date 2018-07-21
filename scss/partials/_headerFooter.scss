@@ -1,0 +1,88 @@
+// --------------------------------------------------------------------
+// ----------------------header styling--------------------------------
+header{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(1,1fr);
+      width:100%;
+      height: auto;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      background-color: white;
+      z-index: 1;
+}
+
+// --------------------------------------------------------------------
+// ----------------------nav styling-----------------------------------
+nav {
+  ul{
+        list-style: none;
+        list-style-type: none;
+        float: left;
+        margin-top: 40px;
+        display: block;
+        margin-left: 5px;
+
+  }
+}
+
+
+
+nav img{
+          width: 240px;
+          height: 100px;
+          float: left;
+}
+
+nav li{
+      font-size: 18px;
+      display: inline;
+      padding: 40px;
+}
+/*internal links for text-decoration,and colour*/
+a{
+              text-decoration: none;
+              color:grey;
+}
+/*internal link hover colour*/
+a:hover{
+                    color: pink;
+}
+/*internal link active colour*/
+a:active{
+                    color: red;
+}
+/*search bar float*/
+.searchBar{
+          float: right;
+              height: 42px;
+}
+.input{
+    width: 180px;
+    padding: 10px;
+    height: 42px;
+}
+// -----------------------------------------------------------------------
+// ------------------------------footer styling--------------------------
+/*  footer section  */
+.copyrights{
+  margin-left: 400px;
+}
+
+section{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 10/11;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+}
+
+footer{
+  grid-column: 1/7;
+  grid-row:11/12;
+  padding: 10px;
+  background-color: #fb5858;
+}
